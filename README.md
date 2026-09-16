@@ -1,9 +1,9 @@
-# Desafio Villani
+# Atividade Professor Galdino
 
 Projeto estático pronto para GitHub Pages + Firebase Firestore.
 
 ## Publicar
-1. Coloque `index.html`, `style.css` e `app.js` na raiz do repositório.
+1. Coloque `index.html`, `style.css`, `app.js` e `logoatvidades.png` na raiz do repositório.
 2. GitHub > Settings > Pages > Deploy from a branch > `main` / root.
 3. Firebase Console > Authentication > Sign-in method > habilite **Anonymous**.
 4. Firebase Console > Firestore Database > crie o banco se ainda não existir.
@@ -11,9 +11,9 @@ Projeto estático pronto para GitHub Pages + Firebase Firestore.
 6. O ranking usa `where(turma)` + `orderBy(pontos)`. Se o Firebase solicitar um índice composto ao primeiro acesso, clique no link exibido no erro do Console e crie o índice para `resultados`: `turma` + `pontos` (descendente).
 
 ## Estrutura
-- 7º B/C: Educação Financeira (4 questões)
-- 8º B/C: Educação Financeira (4 questões)
-- 9º B/C: Matemática (10 questões)
+- 7º A/B/C: Educação Financeira (4 questões)
+- 8º A/B/C: Educação Financeira (4 questões)
+- 9º A/B/C: Matemática (10 questões)
 - Ordem das questões e alternativas embaralhada a cada tentativa.
 - Resultados gravados na coleção `resultados`.
 - Ranking por turma.

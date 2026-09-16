@@ -4,16 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#090d1c">
-  <title>Desafio Villani</title>
+  <title>Atividade Professor Galdino</title>
+  <link rel="icon" type="image/png" href="logoatvidades.png">
+  <link rel="apple-touch-icon" href="logoatvidades.png">
+  <meta property="og:title" content="Atividade Professor Galdino">
+  <meta property="og:description" content="Atividades interativas de Matemática e Educação Financeira.">
+  <meta property="og:image" content="logoatvidades.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="bg"></div>
 <main class="app">
-  <header class="brand"><div class="brandMark">V</div><div><b>Desafio Villani</b><small>Aprenda • Desafie • Evolua</small></div></header>
+  <header class="brand"><img class="brandLogo" src="logoatvidades.png" alt="Logo Atividade Professor Galdino"><div><b>Atividade Professor Galdino</b><small>Aprenda • Pratique • Evolua</small></div></header>
 
   <section id="start" class="card hero">
-    <div class="badge">⚡ DESAFIO DO 3º BIMESTRE</div>
+    <div class="badge">⚡ ATIVIDADE DO 3º BIMESTRE</div>
     <h1>Mostre o que você sabe.</h1>
     <p>Escolha sua turma, responda às questões em uma ordem exclusiva e veja sua posição no ranking.</p>
     <div class="featureRow"><span>🎲 Questões embaralhadas</span><span>🏆 Ranking da turma</span><span>📲 Compartilhe o resultado</span></div>
@@ -25,7 +31,7 @@
         <optgroup label="8º ano — Educação Financeira"><option value="8A">8º A</option><option value="8B">8º B</option><option value="8C">8º C</option></optgroup>
         <optgroup label="9º ano — Matemática"><option value="9A">9º A</option><option value="9B">9º B</option><option value="9C">9º C</option></optgroup>
       </select></label>
-      <button class="primary">Começar desafio <span>→</span></button>
+      <button class="primary">Começar atividade <span>→</span></button>
     </form>
   </section>
 
@@ -36,7 +42,7 @@
   </section>
 
   <section id="result" class="hidden card result">
-    <div class="trophy">🏆</div><div class="eyebrow">DESAFIO CONCLUÍDO</div><h1 id="resultTitle"></h1>
+    <div class="trophy">🏆</div><div class="eyebrow">ATIVIDADE CONCLUÍDA</div><h1 id="resultTitle"></h1>
     <div class="score"><b id="finalScore"></b><span>pontos</span></div><p id="resultText"></p>
     <div class="actions"><button id="shareFriend">Compartilhar com amigos 📲</button><button id="shareTeacher" class="secondary">Enviar ao professor no WhatsApp</button><button id="again" class="ghost">Fazer novamente</button></div>
   </section>
