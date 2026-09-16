@@ -10,6 +10,7 @@
     content="width=device-width, initial-scale=1, viewport-fit=cover"
   >
 
+  <!-- COR DO NAVEGADOR -->
   <meta name="theme-color" content="#090d1c">
 
   <!-- TÍTULO -->
@@ -21,9 +22,9 @@
     content="Atividades interativas de Matemática e Educação Financeira com o Professor Galdino."
   >
 
-  <!-- =========================================
+  <!-- =====================================================
        OPEN GRAPH - WHATSAPP / FACEBOOK
-  ========================================== -->
+  ====================================================== -->
 
   <meta property="og:type" content="website">
 
@@ -54,25 +55,27 @@
 
   <meta property="og:image:type" content="image/png">
 
-  <meta property="og:image:width" content="1200">
-
-  <meta property="og:image:height" content="630">
-
   <meta
     property="og:image:alt"
     content="Atividade Professor Galdino"
   >
 
-  <meta property="og:site_name" content="Atividade Professor Galdino">
+  <meta
+    property="og:site_name"
+    content="Atividade Professor Galdino"
+  >
 
   <meta property="og:locale" content="pt_BR">
 
 
-  <!-- =========================================
+  <!-- =====================================================
        TWITTER / OUTRAS REDES
-  ========================================== -->
+  ====================================================== -->
 
-  <meta name="twitter:card" content="summary_large_image">
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
 
   <meta
     name="twitter:title"
@@ -90,9 +93,9 @@
   >
 
 
-  <!-- =========================================
+  <!-- =====================================================
        FAVICON
-  ========================================== -->
+  ====================================================== -->
 
   <link
     rel="icon"
@@ -114,68 +117,89 @@
 
 <body>
 
+  <!-- FUNDO -->
   <div class="bg"></div>
+
 
   <main class="app">
 
-    <!-- ==============================
+
+    <!-- =====================================================
          CABEÇALHO
-    =============================== -->
+    ====================================================== -->
 
     <header class="brand">
 
-      <div class="brandMark">
+      <div class="brandLogo">
+
         <img
           src="logoatvidades.png"
           alt="Logo Atividade Professor Galdino"
-          style="
-            width:100%;
-            height:100%;
-            object-fit:cover;
-            border-radius:13px;
-          "
         >
+
       </div>
 
-      <div>
+      <div class="brandText">
+
         <b>Atividade Professor Galdino</b>
-        <small>Aprenda • Pratique • Evolua</small>
+
+        <small>
+          Aprenda • Pratique • Evolua
+        </small>
+
       </div>
 
     </header>
 
 
-    <!-- ==============================
-         TELA INICIAL
-    =============================== -->
 
-    <section id="start" class="card hero">
+    <!-- =====================================================
+         TELA INICIAL
+    ====================================================== -->
+
+    <section
+      id="start"
+      class="card hero"
+    >
 
       <div class="badge">
         ⚡ ATIVIDADE DO 3º BIMESTRE
       </div>
 
+
       <h1>
         Mostre o que você sabe.
       </h1>
+
 
       <p>
         Escolha sua turma, responda às questões em uma ordem
         exclusiva e veja sua posição no ranking.
       </p>
 
+
       <div class="featureRow">
 
-        <span>🎲 Questões embaralhadas</span>
+        <span>
+          🎲 Questões embaralhadas
+        </span>
 
-        <span>🏆 Ranking da turma</span>
+        <span>
+          🏆 Ranking da turma
+        </span>
 
-        <span>📲 Compartilhe o resultado</span>
+        <span>
+          📲 Compartilhe o resultado
+        </span>
 
       </div>
 
 
+
+      <!-- FORMULÁRIO -->
+
       <form id="startForm">
+
 
         <!-- NOME -->
 
@@ -194,13 +218,17 @@
         </label>
 
 
+
         <!-- TURMA -->
 
         <label>
 
           Sua turma
 
-          <select id="classroom" required>
+          <select
+            id="classroom"
+            required
+          >
 
             <option value="">
               Selecione sua turma
@@ -268,7 +296,13 @@
         </label>
 
 
-        <button class="primary">
+
+        <!-- COMEÇAR -->
+
+        <button
+          type="submit"
+          class="primary"
+        >
 
           Começar atividade
 
@@ -282,16 +316,18 @@
 
 
 
-    <!-- ==============================
+    <!-- =====================================================
          ATIVIDADE
-    =============================== -->
+    ====================================================== -->
 
     <section
       id="quiz"
       class="hidden quizWrap"
     >
 
+
       <div class="top">
+
 
         <div>
 
@@ -312,7 +348,9 @@
 
         </div>
 
+
       </div>
+
 
 
       <!-- BARRA DE PROGRESSO -->
@@ -324,6 +362,7 @@
       </div>
 
 
+
       <!-- QUESTÃO -->
 
       <div
@@ -331,22 +370,25 @@
         class="card question"
       ></div>
 
+
     </section>
 
 
 
-    <!-- ==============================
+    <!-- =====================================================
          RESULTADO
-    =============================== -->
+    ====================================================== -->
 
     <section
       id="result"
       class="hidden card result"
     >
 
+
       <div class="trophy">
         🏆
       </div>
+
 
       <div class="eyebrow">
         ATIVIDADE CONCLUÍDA
@@ -354,6 +396,7 @@
 
 
       <h1 id="resultTitle"></h1>
+
 
 
       <div class="score">
@@ -367,66 +410,66 @@
       </div>
 
 
+
       <p id="resultText"></p>
+
 
 
       <div class="actions">
 
 
-        <!-- COMPARTILHAR -->
-
-        <button id="shareFriend">
-
+        <button
+          id="shareFriend"
+          type="button"
+        >
           Compartilhar com amigos 📲
-
         </button>
 
-
-        <!-- PROFESSOR -->
 
         <button
           id="shareTeacher"
+          type="button"
           class="secondary"
         >
-
           Enviar resultado ao professor 📲
-
         </button>
 
-
-        <!-- NOVAMENTE -->
 
         <button
           id="again"
+          type="button"
           class="ghost"
         >
-
           Fazer novamente
-
         </button>
 
+
       </div>
+
 
     </section>
 
 
 
-    <!-- ==============================
+    <!-- =====================================================
          RANKING
-    =============================== -->
+    ====================================================== -->
 
     <section
       id="ranking"
       class="card ranking"
     >
 
+
       <div class="rankingHead">
+
 
         <div>
 
           <span>
             🏅
           </span>
+
 
           <div>
 
@@ -443,23 +486,27 @@
         </div>
 
 
+
         <button
           id="refresh"
+          type="button"
           class="icon"
           aria-label="Atualizar ranking"
+          title="Atualizar ranking"
         >
-
           ↻
-
         </button>
 
+
       </div>
+
 
 
       <div
         id="rankingList"
         class="rankingList"
       >
+
 
         <div class="empty">
 
@@ -471,15 +518,17 @@
 
         </div>
 
+
       </div>
+
 
     </section>
 
 
 
-    <!-- ==============================
+    <!-- =====================================================
          RODAPÉ
-    =============================== -->
+    ====================================================== -->
 
     <footer>
 
@@ -487,15 +536,16 @@
 
     </footer>
 
+
   </main>
 
 
   <!-- JAVASCRIPT -->
-
   <script
     type="module"
     src="app.js"
   ></script>
+
 
 </body>
 
