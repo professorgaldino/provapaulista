@@ -1,7 +1,51 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Desafio Villani</title><link rel="stylesheet" href="style.css"></head><body>
-<div class="bg"></div><main class="app">
-<section id="start" class="card hero"><div class="badge">⚡ DESAFIO VILLANI</div><h1>Preparado para subir no ranking?</h1><p>Escolha sua turma, responda ao desafio e compare seu resultado com a galera.</p><form id="startForm"><label>Seu nome<input id="name" maxlength="50" required placeholder="Digite seu nome"></label><label>Turma<select id="classroom" required><option value="">Escolha sua turma</option><option value="7B">7º B — Educação Financeira</option><option value="7C">7º C — Educação Financeira</option><option value="8B">8º B — Educação Financeira</option><option value="8C">8º C — Educação Financeira</option><option value="9B">9º B — Matemática</option><option value="9C">9º C — Matemática</option></select></label><button>Começar desafio 🚀</button></form></section>
-<section id="quiz" class="hidden"><div class="top"><div><small id="who"></small><h2 id="subject"></h2></div><div class="progressText"><b id="qnum"></b><span id="scoreLive">🔥 0 pts</span></div></div><div class="progress"><i id="bar"></i></div><div id="questionCard" class="card question"></div></section>
-<section id="result" class="hidden card result"><div class="trophy">🏆</div><h1 id="resultTitle"></h1><div class="score"><b id="finalScore"></b><span>pontos</span></div><p id="resultText"></p><div class="actions"><button id="shareFriend">Compartilhar com amigos 📲</button><button id="shareTeacher" class="secondary">Enviar ao professor no WhatsApp</button><button id="again" class="ghost">Tentar novamente</button></div></section>
-<section id="ranking" class="card ranking"><div class="rankingHead"><div><span>🏅</span><div><h2>Ranking</h2><small id="rankingLabel">Escolha uma turma para visualizar</small></div></div><button id="refresh" class="icon">↻</button></div><div id="rankingList" class="rankingList"><p class="muted">O ranking aparecerá aqui.</p></div></section>
-</main><script type="module" src="app.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090d1c">
+  <title>Desafio Villani</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg"></div>
+<main class="app">
+  <header class="brand"><div class="brandMark">V</div><div><b>Desafio Villani</b><small>Aprenda • Desafie • Evolua</small></div></header>
+
+  <section id="start" class="card hero">
+    <div class="badge">⚡ DESAFIO DO 3º BIMESTRE</div>
+    <h1>Mostre o que você sabe.</h1>
+    <p>Escolha sua turma, responda às questões em uma ordem exclusiva e veja sua posição no ranking.</p>
+    <div class="featureRow"><span>🎲 Questões embaralhadas</span><span>🏆 Ranking da turma</span><span>📲 Compartilhe o resultado</span></div>
+    <form id="startForm">
+      <label>Seu nome<input id="name" maxlength="50" autocomplete="name" required placeholder="Como você quer aparecer no ranking?"></label>
+      <label>Sua turma<select id="classroom" required>
+        <option value="">Selecione sua turma</option>
+        <optgroup label="7º ano — Educação Financeira"><option value="7A">7º A</option><option value="7B">7º B</option><option value="7C">7º C</option></optgroup>
+        <optgroup label="8º ano — Educação Financeira"><option value="8A">8º A</option><option value="8B">8º B</option><option value="8C">8º C</option></optgroup>
+        <optgroup label="9º ano — Matemática"><option value="9A">9º A</option><option value="9B">9º B</option><option value="9C">9º C</option></optgroup>
+      </select></label>
+      <button class="primary">Começar desafio <span>→</span></button>
+    </form>
+  </section>
+
+  <section id="quiz" class="hidden quizWrap">
+    <div class="top"><div><small id="who"></small><h2 id="subject"></h2></div><div class="progressText"><b id="qnum"></b><span id="scoreLive">🔥 0 pts</span></div></div>
+    <div class="progress"><i id="bar"></i></div>
+    <div id="questionCard" class="card question"></div>
+  </section>
+
+  <section id="result" class="hidden card result">
+    <div class="trophy">🏆</div><div class="eyebrow">DESAFIO CONCLUÍDO</div><h1 id="resultTitle"></h1>
+    <div class="score"><b id="finalScore"></b><span>pontos</span></div><p id="resultText"></p>
+    <div class="actions"><button id="shareFriend">Compartilhar com amigos 📲</button><button id="shareTeacher" class="secondary">Enviar ao professor no WhatsApp</button><button id="again" class="ghost">Fazer novamente</button></div>
+  </section>
+
+  <section id="ranking" class="card ranking">
+    <div class="rankingHead"><div><span>🏅</span><div><h2>Ranking da turma</h2><small id="rankingLabel">Selecione uma turma acima</small></div></div><button id="refresh" class="icon" aria-label="Atualizar ranking">↻</button></div>
+    <div id="rankingList" class="rankingList"><div class="empty">✨<p>Os melhores resultados da turma aparecerão aqui.</p></div></div>
+  </section>
+  <footer>Therezinha Villani • Atividade educacional</footer>
+</main>
+<script type="module" src="app.js"></script>
+</body></html>
